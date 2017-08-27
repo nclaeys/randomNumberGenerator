@@ -15,8 +15,6 @@ public class NumberGenerator {
     }
 
     public List<Integer> generateEvenNumbers(int maxNumber) {
-        return generate(100, 100).stream()
-                          .filter(value -> value % 2 ==0)
-                          .collect(toList());
+        return generate(100, 100);
     }
 }
